@@ -19,7 +19,7 @@ struct CPU {
     mem: [u8; 256],
     sp: u8,
     pc: u8,
-    
+    z: u8,
 }
 
 fn hex(n: u8) -> String {
