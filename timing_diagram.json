@@ -1,0 +1,18 @@
+{signal: [
+  {name: "clk",    wave: "n........", period: 2},
+  {name: "mwd",    wave: "x=x=x..............", data: ["0x33", "0x44"]},
+  {name: "mrd",    wave: "x....=x............", data: ["0x44"]},
+  {name: "maddr",  wave: "x=x=x=x............", data: [0, 1, 1]},
+  {name: "mread",  wave: "0....10............"},
+  {name: "mwrite", wave: "01010.............."},
+  {},
+  {name: "iaddr",  wave: "=====...x..........", data: [0, 1, 2, 3, 4]},
+  {name: "idata",  wave: "=====x.............", data: ["push", "0x33", "push", "0x44", "add"]},
+  {name: "instr",  wave: "=.=.=...=..........", data: ["push", "push", "add"]},
+  {name: "control",wave: "=.=.=...=.........."},
+  {},
+  {name: "pc",     wave: "=====...x..........", data: [0, 1, 2, 3, 4]},
+  {name: "sp",     wave: "==.=..x............", data: [-1, 0, 1, 2]},
+  {name: "z",      wave: "x....=..x..........", data: ["0x44"]},
+  {name: "bus",    wave: "======x............", data: ["push", "0x33", "push", "0x44", "add", "0x44"]},
+]}
